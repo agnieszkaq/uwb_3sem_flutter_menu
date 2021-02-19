@@ -6,31 +6,20 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
+import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 
 Future<List<Meal>> _getMeals() async {
-  String fileName = "meal.json";
-  var dir = await getTemporaryDirectory();
-  File file = new File(dir.path + "/" + fileName);
+  var file = await DefaultCacheManager().getSingleFile('http://www.json-generator.com/api/json/get/cfbLaLgARK?indent=2');
   List<Meal> meals;
-  if (file.existsSync()) {
-    var jsonData = file.readAsStringSync();
-    meals =
-        (json.decode((jsonData)) as List).map((i) => Meal.fromJson(i)).toList();
+  if (file != null && await file.exists()) {
+    var res = await file.readAsString();
+    meals = (json.decode(res) as List)
+        .map((i) => Meal.fromJson(i))
+        .toList();
     return meals;
-  } else {
-    var response = await http
-        .get('http://www.json-generator.com/api/json/get/cfbLaLgARK?indent=2');
-    if (response.statusCode == 200) {
-      meals = (json.decode(response.body) as List)
-          .map((i) => Meal.fromJson(i))
-          .toList();
-      file.writeAsStringSync(response.body, flush: true, mode: FileMode.write);
-      return meals;
-    } else {
-      throw Exception('Failed to load meals');
-    }
   }
 }
+
 
 class Meal {
   String picture;
@@ -235,7 +224,7 @@ class DetailPage extends StatelessWidget {
                 child: Column(
                   children: [
                     Text(
-                      'Składniki: ' + meal.ingredients,
+                      'składniki: '+ '\n'+ meal.ingredients,
                       style: TextStyle(
                         fontSize: 25,
                         fontFamily: 'Pacifico',
