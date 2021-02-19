@@ -42,13 +42,18 @@ If, the main page shows text: "Loading...", check your phone Interent connection
 ## Addictional Information 
 1. About Internet connection:
    - check that in your AnroidManifest.xml You add perrmistion to Internet use: 
-      - <uses-permission android:name="android.permission.INTERNET"/>
+      - uses-permission android:name="android.permission.INTERNET"
 2. Packages:
    - check that in your pubspec.yml, you add depenencies such as:
      - sdk: flutter
      - http: ^0.12.0
      - cached_network_image: ^ 2.0.0
      - flutter_cache_manager: ^1.1.3
+    - also add information about Google fonts for example Lobster:
+       - -fonts:
+       - -family: Lobster
+        - fonts:
+         - -asset: assets/fonts/Lobster-Regular.ttf
 
 ## Functionality
 * json data cached, using DefaultCacheManager(),
