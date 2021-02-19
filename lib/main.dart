@@ -9,7 +9,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 
 Future<List<Meal>> _getMeals() async {
-  var file = await DefaultCacheManager().getSingleFile('https://gist.githubusercontent.com/agnieszkaq/0494fbde7633ae4293129a9f0dad74e8/raw/a97182f683aa8e144da9c17621018a6cd8f18613/flutter_menu.json');
+  var file = await DefaultCacheManager().getSingleFile('https://gist.githubuserconent.com/agnieszkaq/0494fbde7633ae4293129a9f0dad74e8/raw/a97182f683aa8e144da9c17621018a6cd8f18613/flutter_menu.json');
   List<Meal> meals;
   if (file != null && await file.exists()) {
     var res = await file.readAsString();
