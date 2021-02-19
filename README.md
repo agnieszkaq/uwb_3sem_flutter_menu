@@ -42,6 +42,6 @@ samples, guidance on mobile development, and a full API reference.
 #### We can also find information such as calories, macronutrients and exact information about the meal:
  ![](/images/meal_description.JPG)
 
-### When we don't have connection the Internet and our JSON is not cacheable yet, the default view is text: "Loading...": 
+#### When we don't have connection the Internet and our JSON is not cacheable yet, the default view is text: "Loading...": 
 ![](/images/loading.JPG)
 
