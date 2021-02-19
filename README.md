@@ -1,10 +1,18 @@
-# flutter_menu
+# flutter_menu - Menu Restaurant list 
 
 A new Flutter application.
+
+## Table of contents
+* [Getting Started](#getting-started)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Functionality](#functionality)
+* [View](#view)
 
 ## Getting Started
 
 This project is a starting point for a Flutter application.
+It' s my first project in Dart language and Flutter for android application.
 
 A few resources to get you started if this is your first Flutter project:
 
@@ -14,4 +22,13 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
-# uwb_3sem_flutter_menu
+
+## Technologies
+
+## Setup 
+
+## Functionality
+
+## View
+
+
