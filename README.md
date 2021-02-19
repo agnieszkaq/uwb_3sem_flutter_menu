@@ -6,6 +6,7 @@ A new Flutter application.
 * [Getting Started](#getting-started)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [Addictional Information](#addictional-information)
 * [Functionality](#functionality)
 * [View](#view)
 
@@ -34,8 +35,27 @@ samples, guidance on mobile development, and a full API reference.
    - Pacifico-Regular
 
 ## Setup 
+To run this project, please install the above-mentioned technologies, the version will be compatible with mine. 
+Import project from my github. Before project start, check that your emulator is running. 
+If, the main page shows text: "Loading...", check your phone Interent connection, or link to data from main.dart file.
+
+## Addictional Information 
+1. About Internet connection:
+   - check that in your AnroidManifest.xml You add perrmistion to Internet use: 
+      - <uses-permission android:name="android.permission.INTERNET"/>
+2. Packages:
+   - check that in your pubspec.yml, you add depenencies such as:
+     - sdk: flutter
+     - http: ^0.12.0
+     - cached_network_image: ^ 2.0.0
+     - flutter_cache_manager: ^1.1.3
 
 ## Functionality
+* json data cached, using DefaultCacheManager(),
+* Internet image cached, using CachedNetworkImageProvider(),
+* getting json from gist.github,fill data from json to object, creating list od this data, 
+* using FutureBuilder(), to build list of objects,
+* use card widgets to show data
 
 ## View
 
