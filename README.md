@@ -31,8 +31,15 @@ samples, guidance on mobile development, and a full API reference.
 
 ## View
 
+The main page consist of list of a products, from JSON file:
 ![](/images/main_list.JPG)
+
+When click on specific list, we are push to new page, that show ditails about this product: 
 ![](/images/meal.JPG)
+
+We can also find information such as calories, macronutrients and exact information about the meal:
 ![](/images/meal_description.JPG)
+
+When we don't have connection the Interent and our JSON is not cacheable yet, the default view is text: "Loading...": 
 ![](/images/loading.JPG)
 
