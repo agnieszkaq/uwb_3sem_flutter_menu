@@ -31,4 +31,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ## View
 ![](/images/main_list.JPG)
+![](/images/meal.JPG)
+![](/images/meal_description.JPG)
+![](/images/loading.JPG)
 
