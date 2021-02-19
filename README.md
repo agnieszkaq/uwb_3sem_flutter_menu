@@ -25,6 +25,14 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Technologies
 
+1. Android Studio 4.1.1
+2. Flutter 1.22.5 
+3. Dart 2.10.4
+4. Emulator: Galaxy Nexus API 23
+5. Google Fonts:
+   - Lobster-Regular
+   - Pacifico-Regular
+
 ## Setup 
 
 ## Functionality
